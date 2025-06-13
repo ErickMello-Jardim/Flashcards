@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcards Quintessential</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="quintupla.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Anime Flashcards</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="naruto.html">Naruto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sao.html">Sword Art Online</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quintupla.html">Quintessential</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container text-center py-4">
+        <h1 class="display-5">Flashcards Quintessential</h1>
+        <p class="lead">Clique nos cartões para ver a resposta!</p>
+    </header>
+
+    <main>
+        <div class="flashcards-container">
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Quantas irmãs Nakano existem?</div>
+                    <div class="flashcard-back">Cinco</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual o nome do protagonista masculino?</div>
+                    <div class="flashcard-back">Fuutarou Uesugi</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual irmã é conhecida por ser esportista?</div>
+                    <div class="flashcard-back">Yotsuba</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual irmã se passa pelas outras com mais frequência?</div>
+                    <div class="flashcard-back">Nino</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual irmã gosta de história e samurais?</div>
+                    <div class="flashcard-back">Miku</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Quem é a irmã mais tímida?</div>
+                    <div class="flashcard-back">Itsuki</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual irmã mais bonita?</div>
+                    <div class="flashcard-back">Nino</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Quem Fuutarou acaba se casando?</div>
+                    <div class="flashcard-back">Yotsuba Nakano</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-simple">
+        © 2025 Erick de Mello Ceolin. Todos os direitos reservados.
+    </footer>
+
+    <script>
+      document.querySelectorAll('.flashcard').forEach(card => {
+        card.addEventListener('click', function () {
+          card.classList.toggle('flipped');
+        });
+      });
+    </script>
+</body>
+</html>

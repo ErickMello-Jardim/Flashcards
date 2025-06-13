@@ -1,0 +1,232 @@
+:root {
+  --primary: #101014;
+  --secondary: #181824;
+  --accent: #00ffe7;
+  --accent-glow: 0 0 16px #00ffe7, 0 0 32px #00ffe780;
+  --card-bg: rgba(30, 32, 40, 0.7);
+  --card-blur: blur(8px);
+  --text: #f8fafd;
+  --muted: #b0b8c1;
+  --shadow: 0 8px 32px 0 rgba(0,0,0,0.45);
+  --transition: all 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #101014 0%, #23243a 100%);
+  color: var(--text);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  padding-bottom: 80px;
+  transition: var(--transition);
+}
+
+header {
+  width: 100%;
+  background: rgba(24, 24, 36, 0.95);
+  padding: 24px 0 12px 0;
+  text-align: center;
+  border-bottom: 2px solid var(--accent);
+}
+
+header h1 {
+  color: var(--accent);
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-shadow: var(--accent-glow);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 12px;
+}
+
+.nav-link {
+  color: var(--muted);
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  transition: var(--transition);
+  position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--accent);
+  background: rgba(0,255,231,0.08);
+  box-shadow: var(--accent-glow);
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 32px 28px;
+  flex: 1 1 320px;
+  backdrop-filter: var(--card-blur);
+  border: 1.5px solid rgba(0,255,231,0.12);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center center;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 32px 0 #00ffe7cc;
+  transform: translateY(-6px) scale(1.03);
+}
+
+.card-title {
+  color: var(--accent);
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  text-shadow: 0 0 8px #00ffe744;
+}
+
+.card-text {
+  color: var(--text);
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #00ffe7 0%, #00bfff 100%);
+  color: #101014;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 16px #00ffe755;
+  transition: var(--transition);
+  letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+  background: #101014;
+  color: var(--accent);
+  box-shadow: 0 0 32px #00ffe7cc;
+  border: 1.5px solid var(--accent);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.btn-contact {
+  background: linear-gradient(90deg, #00ffe7 0%, #00bfff 100%);
+  color: #101014;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 16px #00ffe755;
+  transition: var(--transition);
+  letter-spacing: 1px;
+}
+
+.btn-contact:hover {
+  background: #101014;
+  color: var(--accent);
+  box-shadow: 0 0 32px #00ffe7cc;
+  border: 1.5px solid var(--accent);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 110%;
+  min-width: 240px;
+  background: var(--secondary, #181824);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.45);
+  border-radius: 10px;
+  z-index: 200;
+  padding: 8px 0;
+}
+
+.dropdown-content a {
+  color: var(--text);
+  padding: 12px 24px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.2s;
+  border-radius: 8px;
+}
+
+.dropdown-content a:hover {
+  background: rgba(0,255,231,0.08);
+  color: var(--accent);
+}
+
+
+
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .card {
+    max-width: 95vw;
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .navbar {
+    gap: 12px;
+  }
+  .card {
+    padding: 18px 10px;
+    min-width: 90vw;
+  }
+  footer {
+    font-size: 0.95rem;
+    height: 48px;
+  }
+}
+
+.contact-topright {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 9999;
+}
+
+.footer-simple {
+  width: 100%;
+  background: #181824;
+  color: #b0b8c1;
+  text-align: center;
+  padding: 18px 0 14px 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}

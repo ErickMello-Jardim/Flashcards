@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcards Sword Art Online</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="sao.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Anime Flashcards</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="naruto.html">Naruto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sao.html">Sword Art Online</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quintupla.html">Quintessential</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container text-center py-4">
+        <h1 class="display-5">Flashcards Sword Art Online</h1>
+        <p class="lead">Clique nos cartões para ver a resposta!</p>
+    </header>
+
+    <main>
+        <div class="flashcards-container">
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual o nome do criador do sistema de navegação do ALO?</div>
+                    <div class="flashcard-back">Recon</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual é o nome do item lendário que permite reviver um jogador em SAO?</div>
+                    <div class="flashcard-back">Tear of a Goddess</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Quantos andares foram oficialmente mostrados do Aincrad antes do jogo ser finalizado?</div>
+                    <div class="flashcard-back">75</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Em que ano se passa o incidente de SAO?</div>
+                    <div class="flashcard-back">2022</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual é o nome verdadeiro de Kirito? (Nome completo)</div>
+                    <div class="flashcard-back">Kazuto Kirigaya</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Em GGO, qual é o nome da arma principal de Sinon?</div>
+                    <div class="flashcard-back">Hecate II</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual o ID de jogo da irmã de Kirito no ALO?</div>
+                    <div class="flashcard-back">Leafa</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual o nome do laboratório onde estava o STL usado em Alicization?</div>
+                    <div class="flashcard-back">Rath</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-simple">
+        © 2025 Erick de Mello Ceolin. Todos os direitos reservados.
+    </footer>
+
+    <script>
+      document.querySelectorAll('.flashcard').forEach(card => {
+        card.addEventListener('click', function () {
+          card.classList.toggle('flipped');
+        });
+      });
+    </script>
+</body>
+</html>

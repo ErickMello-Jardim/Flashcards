@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcards Naruto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="naruto.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Anime Flashcards</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="naruto.html">Naruto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sao.html">Sword Art Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quintupla.html">Quintessential</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container text-center py-4">
+        <h1 class="display-5">Flashcards Naruto</h1>
+        <p class="lead">Clique nos cartões para ver a resposta!</p>
+    </header>
+
+    <main>
+        <div class="flashcards-container">
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual é o nome do clã que controlava o Byakugan além dos Hyuuga?</div>
+                    <div class="flashcard-back">Clã Ōtsutsuki.</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual é o único Jinchuuriki além de Naruto que sobreviveu até o final da Quarta Guerra?</div>
+                    <div class="flashcard-back">Killer Bee.</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual foi o primeiro Jutsu que Naruto usou contra Kakashi no teste dos sinos?</div>
+                    <div class="flashcard-back">Jutsu Clones das Sombras.</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Quem foi o primeiro a perceber que Tobi era Obito?</div>
+                    <div class="flashcard-back">Kakashi.</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual era o verdadeiro objetivo do Projeto Tsuki no Me? -idealizado por Madara-</div>
+                    <div class="flashcard-back">Colocar o mundo inteiro sob um genjutsu eterno.</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual é o nome do clã do qual Kimimaro faz parte?</div>
+                    <div class="flashcard-back">Clã Kaguya.</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual é o nome do jutsu que permite ao Obito se tornar intangível?</div>
+                    <div class="flashcard-back">Kamui.</div>
+                </div>
+            </div>
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">Qual o nome do sapo que ensinou o Modo Sábio para Naruto?</div>
+                    <div class="flashcard-back">Fukasaku.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-simple">
+        © 2025 Erick de Mello Ceolin. Todos os direitos reservados.
+    </footer>
+
+    <script>
+      // Flip card ao clicar
+      document.querySelectorAll('.flashcard').forEach(card => {
+        card.addEventListener('click', function () {
+          card.classList.toggle('flipped');
+        });
+      });
+    </script>
+</body>
+</html>
